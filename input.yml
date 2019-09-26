@@ -1,0 +1,79 @@
+name: Global Model Example
+
+domain:
+    npdata: 'data/paleotopo/scotese_cells10Ma8'
+    flowdir: 3
+
+time:
+    start: -10000000
+    end: -9950000
+    tout: 50000.
+    dt: 10000.
+
+spl:
+    K: 1.e-7
+    Ff: 0.3
+    wgth: 1.e-3
+    
+diffusion:
+    hillslopeK: 0.2
+    sedimentK: 1000.
+
+sea:
+    position: 0.
+
+# paleomap:
+#   - time: -5000000.
+#     npdata: 'data/paleotopo/scotese5Ma8'
+#   - time: 0.
+#     npdata: 'data/paleotopo/scotese0Ma8'
+
+# tectonic:
+#   - start: -10000000.
+#     end: -9000000.
+#     map: 'data/paleoDisp/vel9Ma8.npz'
+#     step: 500000
+#   - start: -9000000.
+#     end: -8000000.
+#     map: 'data/paleoDisp/vel8Ma8.npz'
+#     step: 500000
+#   - start: -8000000.
+#     end: -7000000.
+#     map: 'data/paleoDisp/vel7Ma8.npz'
+#     step: 500000
+#   - start: -7000000.
+#     end: -6000000.
+#     map: 'data/paleoDisp/vel6Ma8.npz'
+#     step: 500000
+#   - start: -6000000.
+#     end: -5000000.
+#     map: 'data/paleoDisp/vel5Ma8.npz'
+#     step: 500000
+#   - start: -5000000.
+#     end: -4000000.
+#     map: 'data/paleoDisp/vel4Ma8.npz'
+#     step: 500000
+#   - start: -4000000.
+#     end: -3000000.
+#     map: 'data/paleoDisp/vel3Ma8.npz'
+#     step: 500000
+#   - start: -3000000.
+#     end: -2000000.
+#     map: 'data/paleoDisp/vel2Ma8.npz'
+#     step: 500000
+#   - start: -2000000.
+#     end: -1000000.
+#     map: 'data/paleoDisp/vel1Ma8.npz'
+#     step: 500000
+#   - start: -1000000.
+#     end: 0.
+#     map: 'data/paleoDisp/vel0Ma8.npz'
+#     step: 500000
+    
+climate:
+  - start: -10000000.
+    uniform: 1.0
+    
+output:
+    dir: 'output'
+    makedir: False

@@ -1,0 +1,31 @@
+name: Global Model Example
+
+domain:
+    npdata: 'data/paleotopo/scotese60Ma'
+    refinement: 9
+
+time:
+    start: -10000000
+    end: 0
+    tout: 500000.
+    dt: 25000.
+
+spl:
+    K: 1.e-7
+    Ff: 0.3
+    wgth: 1.e-3
+
+diffusion:
+    hillslopeK: 1.
+    sedimentK: 1000.
+
+sea:
+    position: 0.
+
+climate:
+  - start: -10000000.
+    uniform: 1.0
+
+output:
+    dir: 'run60-2'
+    makedir: False
