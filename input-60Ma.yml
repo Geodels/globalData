@@ -1,16 +1,14 @@
 name: Global Model Example
 
 domain:
-    npdata: 'data/paleotopo/scotese60Ma'
-    refinement: 8
+    npdata: 'data/scotese_cells_6km_60Ma'
+    flowdir: 3
 
 time:
-    start: -10000000
-    end: -8000000
-    tout: 250000.
-    strat: 50000.
-    rstep: 3
-    dt: 25000.
+    start: -60000000
+    end: -50000000
+    tout: 500000.
+    dt: 10000.
 
 spl:
     K: 1.e-7
@@ -25,9 +23,9 @@ sea:
     position: 0.
 
 climate:
-  - start: -10000000.
+  - start: -60000000.
     uniform: 1.0
 
 output:
-    dir: 'run60'
+    dir: '60MaHR'
     makedir: False
